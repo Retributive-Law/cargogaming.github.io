@@ -34,17 +34,12 @@ html(lang='en')
     #wrapper
       include _header.html
       #main
-        .page.pageClass(class='{{ }}', ng-view='')
+        include _page_about.html
+        include _page_servers.html
+        include _page_vote.html
+        include _page_donate.html
+        include _page_contact.html
       include _footer.html
-    script(type='text/ng-template', id='about.html')
-      include _page_about.html
-    script(type='text/ng-template', id='servers.html')
-      include _page_servers.html
-    script(type='text/ng-template', id='contact.html')
-      include _page_contact.html
     // Main Scripts.
-    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js')
-    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js')
-    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js')
     script(src='./js/style.js')
-    script(src='./js/script.js')
+    script(src='./js/zenscroll-min.js')

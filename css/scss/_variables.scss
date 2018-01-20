@@ -55,7 +55,7 @@ $dropdown-item-height: 50px !default;
 
 /* Cards. **********/
 $card-padding: 20px !default;
-$card-bg-colour: #fff !default;
+$card-bg-colour: $primary-colour-dark !default;
 $card-link-colour: colour("orange", "accent-2") !default;
 $card-link-colour-light: lighten($card-link-colour, 20%) !default;
 
