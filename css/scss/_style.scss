@@ -39,9 +39,13 @@ hr {
 	position: relative;
 }
 
+header, header:before {
+  background: 50% 50% / cover;
+}
 header {
   text-align: center;
   background-color: $primary-colour;
+  background-image: url(../img/header.png);
   color: #fff;
 
   h1 {
@@ -60,7 +64,7 @@ header {
     display: inline-block;
     font-style: italic;
     padding: 6px 10px;
-    background: colour("teal", "accent-3") !important;
+  //  background: colour("teal", "accent-3") !important;
     color: #345;
     color: rgba(0, 0, 0, 0.7);
     border-radius: 4px;
@@ -141,16 +145,19 @@ footer {
   background-color: $primary-colour-dark;
   color: #fff;
 
+  .container, .container:before {
+    background: 50% 50% / cover;
+  }
   .container {
     padding: 2%;
-
-    width: 75%;
+    width: 100%;
 
     h1 {
       font-size: 1.64rem;
       line-height: 110%;
       margin: 0.82rem 0 0.656rem 0;
     }
+    background-image: url(../img/footer.png);
   }
 
   .footer_button {

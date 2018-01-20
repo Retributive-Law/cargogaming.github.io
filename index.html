@@ -23,16 +23,17 @@
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/velocity.min.js"></script>
     <script src="./js/sweetalert.js"></script>
+    <script src="./js/zenscroll-min.js"></script>
     <script src="./js/waves.js"></script>
   </head>
   <body ng-app="mainApp">
     <div id="wrapper"><header id="header">
   <div class="container">
     <a onclick='zenscroll.to(document.getElementById("header"))' style="overflow:visible;" class="waves-effect">
-      <img src="img/logo.jpg"/>
+      <img src="img/Logo.png"/>
     </a>
     <h1>Cargo Gaming</h1>
-    <p>Rust Server Host</p>
+    <p class="indigo">Server Host</p> <p class="light-blue">Rust</p> <p class="red">Cargo</p>
   </div>
   <nav>
     <a onclick='zenscroll.to(document.getElementById("about"))' class="btn btn-large btn-clear white-text waves-effect">About</a>
@@ -44,13 +45,24 @@
 </header>
 
       <div id="main"><div class="content" id="about">
-  <h2 class="section-title">
-    <span><i class="material-icons">perm_identity</i>About Us</span>
-  </h2>
+  <div class="row">
+    <div class="col s6">
+      <h2 class="section-title">
+        <span><i class="material-icons">perm_identity</i>About Us</span>
+      </h2>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p><br/>
+      <p>
+        We are a newer server with tons of fun features! Some of our favorites include our custom plugins such as Enchanted Cargo!
+        With a random loot box that spawns on the map you have a large chance of getting specially perked items that have more features than your basic items you'd normally find.
+        We have loads of features but not too many where if a new player to rust joins they won't be overwhelmed.
+        It's enjoyable to all players regardless of past experience. We hope to see you soon!
+      </p>
+    </div>
+
+    <div class="col s6" style="background-image: url(./img/about.png);height:300px;">
+    </div>
+  </div>
+  <br/><hr/>
 </div>
 <div class="content" id="servers">
   <h2 class="section-title">
@@ -64,7 +76,7 @@
       <div class="col s6">
         <div class="card" style="overflow: hidden;">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/Logo.jpg">
+            <img class="activator" src="./img/Cargo.png">
           </div>
 
           <div class="card-content">
@@ -75,7 +87,26 @@
             <span class="card-title white-text text-darken-4">Cargo X3<i class="material-icons right">close</i></span><hr/>
             <center>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                ⛏ 3x all gathered resources!<br/>
+                🚁 Advanced Teleport [to prevent players teleporting through walls]!<br/>
+                🌖 70 minute days | 2 minute nights!<br/>
+                🛠 Starter Kit [free kit for joining steam group]!<br/>
+                🛡 Clans share authorization for doors/turrets!<br/>
+                🎣 Fishing!<br/>
+                🌿 Ability to get rope from gathering hemp!<br/>
+                🛒 Custom Shop!<br/>
+                🎭 Random Skins!<br/>
+                ⚔ 60 second TP combat block<br/>
+                💣 5-minute Raid TP block<br/>
+                🏆 PvP Challenges!<br/>
+                ⏳ Quick Smelt!<br/>
+                🔨 Remover Tool!<br/>
+                👁️‍🗨️ Sign Artist!<br/>
+                🎰 Upgraded Heli and Bradley loot!<br/>
+                🥇 Dedicated Discord Channel!<br/>
+                🌌 Monthly BP wipes!<br/>
+                🚨 Server wipes weekly! Every Thursday!<br/>
+                🥊 Admins do not play on the server. They are only there to help with any issues.
               </p>
               <br/>
               <a class="btn btn-medium btn-green btn-radius waves-effect" href="steam://connect/cargogaming.com:28015" target="_blank">Connect</a>
@@ -87,7 +118,7 @@
       <div class="col s6">
         <div class="card" style="overflow: hidden;">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/Logo.jpg">
+            <img class="activator" src="./img/Unleashed.png">
           </div>
 
           <div class="card-content">
@@ -108,6 +139,7 @@
       </div>
     </div>
   </div>
+  <hr/>
 </div>
 <div class="content" id="vote">
   <h2 class="section-title">
@@ -115,8 +147,12 @@
   </h2>
 
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p><br/>
+    Voting for Cargo servers will increase pop and reward you a small reward that increases with every vote.
+  </p>
+  <br/>
+  <a class="btn btn-medium btn-orange btn-radius waves-effect" href="https://rust-servers.net/server/137165/" target="_blank">Vote For Cargo</a>
+  <a class="btn btn-medium btn-orange btn-radius waves-effect" href="https://rust-servers.net/server/137165/" target="_blank">Vote For Unleashed</a>
+  <br/><hr/>
 </div>
 <div class="content" id="donate">
   <h2 class="section-title">
@@ -124,8 +160,11 @@
   </h2>
 
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p><br/>
+    Every thing is solely based on donations and donations only. you are getting something as a gratitude of appreciation for us to say thank you! However there are no refunds and all causes go straight in to making the server impove and become a better place.
+  </p>
+  <br/>
+  <a class="btn btn-medium btn-green btn-radius waves-effect" href="https://sdonate.com/stores/CargoGaming/index.php" target="_blank">SDonate</a>
+  <br/><hr/>
 </div>
 <div class="content" id="contact">
   <h2 class="section-title">
@@ -136,7 +175,7 @@
     To contact Cargo Gaming fill out <b>the form below</b>.
     We will reply as soon as we can.
     We look forward to reading your message.
-    Please feel free to send us an email, at <i>cargogaming@gmail.com</i>, or fill in this handy contact form.
+    Please feel free to send us an email, at <i>cargogamingrust@gmail.com</i>, or fill in this handy contact form.
     Our aim our to respond <b>within 48 hours</b>.
   </p><br/>
 
@@ -193,13 +232,12 @@
   </div>
   <div class="copyright">
     <p>Copyright © 2018 Cargo Gaming. | All Rights Reserved.</p>
-    <p>Page created by: <a href="http://mattparks.github.io" target="_blank">Matthew Albrecht</a>. <a onclick='zenscroll.to(document.getElementById("header"))'>Top</a>.</p>
+    <p>Page created by: <a href="http://mattparks.github.io" target="_blank">Matthew Albrecht</a>. <a class="blue-text" onclick='zenscroll.to(document.getElementById("header"))'>Top</a>.</p>
   </div>
 </footer>
 
     </div>
     <!-- Main Scripts.-->
     <script src="./js/style.js"></script>
-    <script src="./js/zenscroll-min.js"></script>
   </body>
 </html>
