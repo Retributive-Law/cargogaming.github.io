@@ -27,14 +27,27 @@
     <script src="./js/waves.js"></script>
   </head>
   <body ng-app="mainApp">
-    <div id="wrapper"><header id="header">
-  <div class="container">
+    <div id="wrapper"><div id="para">
+  <div class="layer-bg layer" data-depth="0.10" data-type="parallax"></div>
+  <div class="layer-1 layer" data-depth="0.20" data-type="parallax"></div>
+  <div class="layer-2 layer" data-depth="0.30" data-type="parallax"></div>
+  <div class="layer-3 layer" data-depth="0.40" data-type="parallax"></div>
+  <div class="layer-4 layer" data-depth="0.60" data-type="parallax"></div>
+  <div class="layer-5 layer" data-depth="0.70" data-type="parallax"></div>
+  <div class="layer-6 layer" data-depth="0.80" data-type="parallax"></div>
+  <div class="layer-7 layer" data-depth="1.0" data-type="parallax"></div>
+  <div class="layer-overlay layer" data-depth="0.55" data-type="parallax"></div>
+  <div class="layer-0 layer" data-depth="0.75" data-type="parallax"></div>
+</div>
+
+<header id="header">
+  <!--<div class="container">
     <a onclick='zenscroll.to(document.getElementById("header"))' style="overflow:visible;" class="waves-effect">
       <img src="img/Logo.png"/>
     </a>
     <h1>Cargo Gaming</h1>
     <p class="indigo">Server Host</p> <p class="light-blue">Rust</p> <p class="red">Cargo</p>
-  </div>
+  </div>-->
   <nav>
     <a onclick='zenscroll.to(document.getElementById("about"))' class="btn btn-large btn-clear white-text waves-effect">About</a>
     <a onclick='zenscroll.to(document.getElementById("servers"))' class="btn btn-large btn-clear white-text waves-effect">Servers</a>
@@ -150,8 +163,8 @@
     Voting for Cargo servers will increase pop and reward you a small reward that increases with every vote.
   </p>
   <br/>
-  <a class="btn btn-medium btn-orange btn-radius waves-effect" href="https://rust-servers.net/server/137165/" target="_blank">Vote For Cargo</a>
-  <a class="btn btn-medium btn-orange btn-radius waves-effect" href="https://rust-servers.net/server/137165/" target="_blank">Vote For Unleashed</a>
+  <a class="btn btn-medium btn-blue btn-radius waves-effect" href="https://rust-servers.net/server/137165/" target="_blank">Vote For Cargo</a>
+  <a class="btn btn-medium btn-blue btn-radius waves-effect" href="https://rust-servers.net/server/138268/" target="_blank">Vote For Unleashed</a>
   <br/><hr/>
 </div>
 <div class="content" id="donate">
