@@ -15,7 +15,6 @@
       layer.style.transform = translate3d;
     }
   });
-
 }).call(this);
 
 (function ($) {

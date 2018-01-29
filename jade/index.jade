@@ -31,15 +31,14 @@ html(lang='en')
     script(src='./js/sweetalert.js')
     script(src='./js/zenscroll-min.js')
     script(src='./js/waves.js')
-  body(ng-app='mainApp')
-    #wrapper
-      include _header.html
-      #main
-        include _page_about.html
-        include _page_servers.html
-        include _page_vote.html
-        include _page_donate.html
-        include _page_contact.html
-      include _footer.html
+  body
+    include _header.html
+    #main
+      include _page_about.html
+      include _page_servers.html
+      include _page_vote.html
+      include _page_donate.html
+      include _page_contact.html
+    include _footer.html
     // Main Scripts.
     script(src='./js/style.js')
